@@ -28,7 +28,6 @@ class PostDetail(generics.RetrieveDestroyAPIView):
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly,
                           IsOwnerOrReadOnly
-                          
                           ]
     
     
